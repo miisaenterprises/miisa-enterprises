@@ -138,7 +138,7 @@ Monday - Saturday
 
 <br>
 
-10:00 AM - 7:00 PM
+09:00 AM - 6:00 PM
 
 </p>
 
@@ -235,50 +235,63 @@ miisaenterpriseshp@gmail.com
 <h3>
 Request Service
 </h3>
+  
+<form action="https://formsubmit.co/miisaenterpriseshp@gmail.com" method="POST">
 
-<form>
+    <!-- Disable CAPTCHA -->
+    <input type="hidden" name="_captcha" value="false">
 
-<input
-type="text"
-placeholder="Your Name"
-required>
+    <!-- Email Subject -->
+    <input type="hidden" name="_subject" value="New Printer Service Request - Miisa Enterprises">
 
-<input
-type="email"
-placeholder="Email Address"
-required>
+    <!-- Redirect after submission -->
+    <input type="hidden" name="_next" value="https://jonedwin58-hash.github.io/miisa-enterprises/thankyou.html">
 
-<input
-type="tel"
-placeholder="Phone Number"
-required>
+    <input
+        type="text"
+        name="Customer Name"
+        placeholder="Your Name"
+        required>
 
-<select>
+    <input
+        type="email"
+        name="Email"
+        placeholder="Email Address"
+        required>
 
-<option>Select Service</option>
+    <input
+        type="tel"
+        name="Phone Number"
+        placeholder="Phone Number"
+        required>
 
-<option>HP Printer Repair</option>
+    <select name="Required Service" required>
 
-<option>LaserJet Repair</option>
+        <option value="">Select Service</option>
 
-<option>Printer Installation</option>
+        <option>HP Printer Repair</option>
 
-<option>Maintenance Service</option>
+        <option>LaserJet Repair</option>
 
-<option>AMC Service</option>
+        <option>Printer Installation</option>
 
-</select>
+        <option>Printer Maintenance</option>
 
-<textarea
-rows="6"
-placeholder="Describe Your Issue">
-</textarea>
+        <option>AMC Service</option>
 
-<button type="submit">
+        <option>Cartridge Support</option>
 
-Submit Request
+    </select>
 
-</button>
+    <textarea
+        name="Issue Description"
+        rows="6"
+        placeholder="Describe your printer issue"
+        required></textarea>
+
+    <button type="submit">
+        Submit Service Request
+    </button>
 
 </form>
 
